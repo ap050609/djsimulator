@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DJ Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+<body style="font-family: 'Indie Flower', cursive; background-color: gray; color: maroon;">
+<center>
+  	<h3 style="font-weight: bolder;">DJ Simulator</h3>
+    <br><br>
+    <h4 class="btn btn-secondary" style="font-size: large; box-shadow:10px 10px 10px maroon;">To adjust volume, move your left wrist up and down, and to adjust speed, move your right wrist up and down.</h4>
+	<br><br><br>
+  <div id="speed" style="float: left;">
+    <img src="disk.gif" class="div_speed_img" style="height: 200px; width: 200px;">
+    <br><br>
+    <h3 class="btn btn-danger" style="font-weight: bolder; font-size: medium;">Speed : <br><span id="speed_id"></span></h3>
+  </div>
+  
+  <div id="volume" style="float: right;">
+    <img src="disk.gif" class="div_volume_img" style="height: 200px; width: 200px;">
+    <br><br>
+    <h3 class="btn btn-danger" style="font-weight: bolder; font-size: medium;">Volume : <br><span id="volume_id"></span></h3>
+  </div>
+  
+  <button class="btn btn-primary" onclick = "play()"style="font-weight: 300; font-size: x-large;"> Play song </button>
+  <br><br>
+
+
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
